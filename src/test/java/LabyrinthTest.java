@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 
-import com.progmatic.labyrinthproject.Coordinate;
-import com.progmatic.labyrinthproject.LabyrinthImpl;
-import com.progmatic.labyrinthproject.RandomPlayer;
-import com.progmatic.labyrinthproject.WallFollowerPlayer;
+import com.progmatic.labyrinthproject.*;
 import com.progmatic.labyrinthproject.enums.CellType;
 import com.progmatic.labyrinthproject.enums.Direction;
 import com.progmatic.labyrinthproject.exceptions.CellException;
@@ -395,8 +392,7 @@ public class LabyrinthTest {
         return new WallFollowerPlayer();
     }
     
-    // TODO
     private Player getConsciousPlayerImpl() {
-        return null;
+        return new ConsciousPlayer();
     }
 }

@@ -181,5 +181,17 @@ public class LabyrinthImpl implements Labyrinth {
 
     }
 
+    public Map<Coordinate, CellType> getLabyrinth() {
+        return labyrinth;
+    }
+
+    public Coordinate getStart() {
+        return start;
+    }
+
+    public Coordinate getEnd() {
+        return end;
+    }
+
 
 }
